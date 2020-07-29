@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <main>
+        <form class="products-form" action="/admin/{{#if editing}}edit-product{{else}}add-products{{/if}}" method="POST">
+            <div class="form-control">
+                <label for="title">Titulo:</label>
+                <input type="text" name="title" id="title" value="{{#if editing}}{{prod.title}}{{/if}}">
+            </div>
+            <div class="form-control">
+                <label for="imgUrl">Img URL:</label>
+                <input type="text" name="imgUrl" id="imgUrl" value="{{#if editing}}{{prod.ImageURL}}{{/if}}">
+            </div>
+            <div class="form-control">
+                <label for="descrip">Description:</label>
+                <textarea type="text" name="descrip" id="descrip" rows="5">{{#if editing}}{{prod.Description}}{{/if}}</textarea>
+            </div>
+            <div class="form-control">
+                <label for="price">Price:</label>
+                <input type="number" name="price" id="price" value="{{#if editing}}{{prod.price}}{{/if}}">
+            </div>
+            {{#if editing}}
+                <input type="hidden" name="id" id="id" value="{{#if editing}}{{prod.id}}{{/if}}">
+            {{/if}}
+            <button class="btn" type="submit">{{#if editing}} Edit Product{{else}}Add Product {{/if}}</button>
+
+            
+
+        </form>
+    </main>
+</html>

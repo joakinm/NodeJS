@@ -1,0 +1,93 @@
+body{
+    padding:0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-header{
+
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+    padding: 0 1.5rem;
+}
+.main-header__nav{
+    width: 100%;
+    display: flex;
+    align-items: center; 
+}
+.main-header__item-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.main-header__item{
+    margin: 0 1rem;
+    padding:0;
+}
+.main-header__item a{
+    color:white;
+}
+.main-header__item a:hover,
+.main-header__item a:active,
+.main-header__item a.active{
+    color:teal;
+}
+.products-form{
+    width: 20rem;
+    max-width: 90%;
+    margin: auto;
+}
+.form-control{
+    margin: 1rem 0;
+}
+.form-control label,
+.form-control input,
+.form-control textarea{
+    display:block;
+}
+.form-control input,
+.form-control textarea{
+    border: 1px solid blue;
+    width: 100%;
+}
+button{
+    font: inherit;
+    border: 1px solid blue;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+}
+button:hover,
+button:active{
+    background-color: blue;
+    color: cornsilk;
+}
+h1{
+    padding: 0 2.5rem; 
+}
+.main-body{
+    padding: 0 2.5rem; 
+}
+.imgThumb{
+    width: 10rem;
+    height: 10rem;
+}
+
+/* CARD! */
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 45%;
+    text-align: center;
+  }
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }

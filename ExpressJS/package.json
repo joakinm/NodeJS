@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-pruebas",
+  "version": "1.0.0",
+  "description": "Practicando con nodeJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Joaquin Ivan Martinez",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.0.2",
+    "handlebars": "^4.7.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

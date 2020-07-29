@@ -1,0 +1,13 @@
+<div class="card selected">
+    <h1>{{prods.title}}</h1>
+    <img src="{{prods.ImageURL}}" alt="{{prods.title}}" class="imgThumb">
+    <div class="container">
+        <h4><b>Descripcion: {{prods.Description}}</b></h4>
+        <p>Precio: {{prods.price}}</p>
+        <form class="btn" action="/cart" method="POST">
+            <button type="submit">Add to Cart</button>
+            <input type="hidden" name="id" value="{{prods.id}}">
+        </form>
+    </div>
+
+</div> 

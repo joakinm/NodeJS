@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    {{#if hasProducts}}
+    <main class="main-body">
+        <h1>Mis productos:</h1>
+            {{#each prods}}
+            <div class="card">
+                <h1>{{this.title}}</h1>
+                <img src="{{this.ImageURL}}" alt="{{this.title}}" class="imgThumb">
+                <div class="container">
+                    <h4><b>Descripcion: {{this.Description}}</b></h4>
+                    <p>Precio: {{this.price}}</p>
+                 </div>
+                 <form class="btn" action="/cart" method="POST">
+                    <button type="submit">Add to Cart</button>
+                    <input type="hidden" name="id" value="{{prods.id}}">
+                 </form>
+            </div> 
+            {{/each}}
+    </main>
+    {{else}}    
+        <h1>No se encontraron productos!</h1>
+    {{/if}}
+</body>
+    
+</html>
